@@ -1,0 +1,23 @@
+{
+  "name": "proyecto-backend-api",
+  "version": "1.0.0",
+  "description": "ejemplo de conexion con bd mysql",
+  "keywords": [
+    "node",
+    "express",
+    "proyecto",
+    "api"
+  ],
+  "license": "MIT",
+  "author": "Cristian",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "mysql2": "^3.14.3",
+    "sequelize": "^6.37.7"
+  }
+}
