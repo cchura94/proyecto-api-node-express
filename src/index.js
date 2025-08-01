@@ -1,7 +1,11 @@
 const express = require("express");
 const sequelize = require("./database/conexion");
+const Rutas = require("./routes/index");
 // app
 const app = express();
+
+// json
+app.use(express.json());
 
 // variables
 const PORT=3000;
@@ -14,6 +18,9 @@ app.get("/", async function(req, res){
     return res.json(results);
     // return res.json({mensaje: "Hola Mundo desde Node con Express saludos a: "+req.query.pais}) ;
 });
+
+// habilitando Rutas
+app.use("/api", Rutas);
 
 // levantar el servidor de node
 app.listen(PORT, function(){
